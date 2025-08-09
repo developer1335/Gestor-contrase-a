@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Contraseñas Personales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🔐 Gestor de Contraseñas</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Agregar nueva contraseña</h2>
+            <form id="passwordForm">
+                <input type="text" id="service" placeholder="Servicio o página" required>
+                <input type="text" id="username" placeholder="Usuario o correo" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Mis contraseñas</h2>
+            <input type="text" id="search" placeholder="Buscar servicio...">
+            <ul id="passwordList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Gestor de Contraseñas Personales</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
